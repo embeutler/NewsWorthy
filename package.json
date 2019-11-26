@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iCarolyn/AllTheNews.git"
+    "url": "https://github.com/embeutler/newsworthy.git"
   },
-  "author": "",
+  "author": "EmDBad",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/iCarolyn/AllTheNews/issues"
+    "url": "https://github.com/embeutler/newsworthy/issues"
   },
-  "homepage": "https://github.com/iCarolyn/AllTheNews#readme",
+  "homepage": "https://github.com/embeutler/newsworthy#readme",
   "dependencies": {
     "axios": "^0.19.0",
     "cheerio": "^1.0.0-rc.3",
