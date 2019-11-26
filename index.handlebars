@@ -1,0 +1,58 @@
+<nav>
+<img src="theonion.png"> <h2 style="size:12pt;color:black;text-align: center;">Newsworthy The Onion</h2> 
+</nav>
+
+ <ul> 
+    <li>  <a href="/18-HW/my solution/newsworthy/controllers/controller.js" class="waves-effect waves-light btn tooltipped" data-position="bottom" data-tooltip="Scrape the onion website for articles"> <h6> the layers!</h6></a></li>
+ <li style="text-align: center;"><link href="http://www.theonion.com/supreme-court-denies-serial-subject-hearing-1840053733">  Supreme Court Denies ‘Serial’ Subject Hearing </link>
+<img src="https://i.kinja-img.com/gawker-media/image/upload/c_fit,fl_progressive,q_80,w_636/abwm6w3prjmdcyvoqfxn.jpg"/><p class="sc-77igqf-0 hJpRRP">
+    <p>The Supreme Court said Monday it would not review the case of Adnan Syed, the subject of the popular podcast <em>Serial</em>, which covered the 1999 murder of which he was accused. What do <em>you</em> think?</p>
+<a href="https://www.theonion.com/supreme-court-denies-serial-subject-hearing-1840053733"></a>
+
+        </ul>
+    </div>
+
+
+<br>
+
+<div class="container">
+
+    <table>
+        <tbody>
+
+            {{#each articles}}
+            <div class=row>
+
+                <div class="col s8">
+                    <a href="{{this.link}}" class="collection-item tooltipped" target="_blank" data-position="bottom" data-tooltip="Click the link to view the full news article!">{{this.title}}</a>
+                </div>
+                <div class="col s4">
+                    <button class="noteButton waves-effect waves-light btn tooltipped" id="{{this._id}}" data-position="bottom" data-tooltip="Add/view your notes"><i class="material-icons right">speaker_notes</i> Notes</button>
+                </div>
+
+            </div>
+            {{/each}}
+
+        </tbody>
+    </table>
+
+</div>
+<div id="noteModal" class="modal modal-fixed-footer">
+
+    <div class="modal-content">
+        <h4>Notes</h4>
+        <ul class="messages collection"></ul>
+        <form name="noteForm" id="noteForm">
+            <input required placeholder="Enter a note here" type="text" name="noteText" id="noteText">
+            <button class="waves-effect waves-light btn" size="sml" type="submit" id="noteButton">
+             <i class="material-icons right">note_add</i> Post a note </button>
+    </div>
+
+    <div class="modal-footer">
+        <a href="/" class="modal-action modal-close waves-effect waves-light btn-flat">Close</a>
+        </form>
+    </div>
+
+</div>
+
+<footer class="container"> EmDBad 2019 - The Real Fake News</footer>
